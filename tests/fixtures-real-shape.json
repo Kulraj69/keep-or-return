@@ -1,0 +1,57 @@
+{
+ "status": 200,
+ "data": {
+  "error": null,
+  "results": {
+   "output": [
+    {
+     "ui_score": 80,
+     "mask_urls": [
+      "https://example.com/pore_output.jpg"
+     ],
+     "raw_score": 79.33166265487671,
+     "type": "pore"
+    },
+    {
+     "ui_score": 75,
+     "mask_urls": [
+      "https://example.com/texture_output.jpg"
+     ],
+     "raw_score": 66.78898334503174,
+     "type": "texture"
+    },
+    {
+     "ui_score": 97,
+     "mask_urls": [
+      "https://example.com/redness_output.jpg"
+     ],
+     "raw_score": 98.49787139892578,
+     "type": "redness"
+    },
+    {
+     "ui_score": 99,
+     "mask_urls": [
+      "https://example.com/acne_output.jpg"
+     ],
+     "raw_score": 100.0,
+     "type": "acne"
+    },
+    {
+     "score": 87.75,
+     "type": "all"
+    },
+    {
+     "score": 51,
+     "type": "skin_age"
+    },
+    {
+     "mask_urls": [
+      "https://example.com/resize_image_output.jpg"
+     ],
+     "type": "resize_image"
+    }
+   ]
+  },
+  "task_status": "success"
+ }
+}
