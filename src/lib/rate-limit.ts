@@ -3,7 +3,7 @@ import { timingSafeEqual } from "node:crypto";
 export type LimitResult =
   | { ok: true; remaining: number }
   | { ok: false; note: string; retryAfter: number };
-// Adapted from Taste Twin. A shared store is needed for a deployment-wide hard cap.
+// A shared store is needed for a deployment-wide hard cap.
 export class AnalyzeLimiter {
   private day = "";
   private count = 0;

@@ -2,7 +2,7 @@
 
 A personal skincare product diary for the YouCam API Skin AI & eCommerce hackathon. Turn a label’s claims into skin concerns, take a baseline and daily selfies, and compare the resulting scores before the return window closes. The interface is a dreamcore IBM-style computer with an SVG timeline and a thermal decision receipt.
 
-Built with Next.js 16.4.3, React 19.3, TypeScript, and Tailwind CSS v4, following the versions and patterns in Taste Twin. Target: Vercel. No accounts or database are required.
+Built with Next.js 16.4.3, React 19.3, TypeScript, and Tailwind CSS v4. Target: Vercel. No accounts or database are required.
 
 ## Run locally
 
@@ -68,7 +68,7 @@ The receipt shows per-concern raw deltas to four decimal places, the average rou
 
 The thresholds are transparent demo heuristics, not clinically validated noise thresholds or proof of product efficacy. Lighting, routine, and other factors can change scores. This is a personal tracking aid, not a diagnosis. Consistent photo tips are shown before capture.
 
-Optional narration follows Taste Twin’s Nebius pattern: `https://api.tokenfactory.nebius.com/v1/chat/completions`, model `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B`, eight-second timeout, strict two-sentence output, no photos or product names sent to the model. Output numbers must be present in the supplied numerical facts; unsupported numbers, number words, percentage conversions, markup, or changed verdict labels trigger the built-in template. The model never calculates or changes the verdict.
+Optional narration uses Nebius Token Factory: `https://api.tokenfactory.nebius.com/v1/chat/completions`, model `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B`, eight-second timeout, strict two-sentence output, no photos or product names sent to the model. Output numbers must be present in the supplied numerical facts; unsupported numbers, number words, percentage conversions, markup, or changed verdict labels trigger the built-in template. The model never calculates or changes the verdict.
 
 ## Budget and deployment
 
