@@ -112,14 +112,18 @@ svg {
 .skip-link {
   position: fixed;
   top: -100px;
+  opacity: 0;
+  pointer-events: none;
   left: 20px;
   z-index: 100;
   background: var(--phosphor);
   color: var(--screen);
   padding: 12px 18px;
 }
-.skip-link:focus {
+.skip-link:focus-visible {
   top: 10px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* A still, original landscape. All atmospheric layers ignore pointer events. */

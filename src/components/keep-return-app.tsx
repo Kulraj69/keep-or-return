@@ -1107,7 +1107,7 @@ export function KeepReturnApp({
                             <tr key={s.concern}>
                               <th scope="row">{LABELS[s.concern]}</th>
                               <td>{s.ui_score}</td>
-                              <td>{s.raw_score}</td>
+                              <td>{Number(s.raw_score.toFixed(1))}</td>
                             </tr>
                           ))}
                         </tbody>
